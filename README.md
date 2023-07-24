@@ -36,7 +36,7 @@ Packages can be decoupled by separating their responsibility, and they can be tu
 
 3. **The Stable Abstractions Principle** : Abstractness increases with stability.
 
-### Please refer to the following articles by Robert C. Martin for an in depth understanding:
+#### Please refer to the following articles by Robert C. Martin for an in depth understanding:
 
 - [The Principles of OOD][ref-1]
 - [The Clean Code Blog][ref-2]
@@ -237,7 +237,7 @@ Packages can be decoupled by separating their responsibility, and they can be tu
           ...
         }
 
-Many programming languages do use same comment style, however for details you can refer to Java Code Conventions, for Python please refer to Python-PEP-257-Docstring Conventions.
+    Many programming languages do use same comment style, however for details you can refer to Java Code Conventions, for Python please refer to Python-PEP-257-Docstring Conventions.
 
 ## 4. Testing
 
@@ -271,16 +271,16 @@ Many programming languages do use same comment style, however for details you ca
      - Continue support for existing properties/endpoints.
      - Add new properties/endpoints rather than changing existing ones.
      - Thoughtfully sunset obsolete properties/endpoints.
-
-        {
-            "data": {
-            "id": 1,
-            "name": "Carlos Ray Norris",     // original property from v1
-            "firstName": "Carlos",           // new property in v2
-            "lastName": "Norris",            // new property in v2
-            "alias": "Chuck",                // obsolete property in v1
-            "aliases": ["Chuck", "Walker"]   // new property in v3 
-        }
+     
+            {
+                "data": {
+                "id": 1,
+                "name": "Carlos Ray Norris",     // original property from v1
+                "firstName": "Carlos",           // new property in v2
+                "lastName": "Norris",            // new property in v2
+                "alias": "Chuck",                // obsolete property in v1
+                "aliases": ["Chuck", "Walker"]   // new property in v3 
+            }
 
 3. API endpoints should be nested relatively.
 
