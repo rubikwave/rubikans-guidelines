@@ -273,15 +273,15 @@ Many programming languages do use same comment style, however for details you ca
      - Thoughtfully sunset obsolete properties/endpoints.
 
 
-    {
-        "data": {
-        "id": 1,
-        "name": "Carlos Ray Norris",     // original property from v1
-        "firstName": "Carlos",           // new property in v2
-        "lastName": "Norris",            // new property in v2
-        "alias": "Chuck",                // obsolete property in v1
-        "aliases": ["Chuck", "Walker"]   // new property in v3
-    }
+            {
+                "data": {
+                "id": 1,
+                "name": "Carlos Ray Norris",     // original property from v1
+                "firstName": "Carlos",           // new property in v2
+                "lastName": "Norris",            // new property in v2
+                "alias": "Chuck",                // obsolete property in v1
+                "aliases": ["Chuck", "Walker"]   // new property in v3
+            }
 
 3. API endpoints should be nested relatively.
 
@@ -313,11 +313,9 @@ Entities should be seperated into its own endpoints.
 
 5. Use nominative API names. API endpoints should be described with nouns.
 
-
         https://api.rubikans.com/v1/product/22/                 // NOT: https://api.rubikans.com/v1/product/get?id=22 
 
 6. Use HTTP methods to describe functionality.
-
 
         GET::https://api.rubikans.com/v1/product/22             // NOT: https://api.rubikans.com/v1/product/22/get
         POST::https://api.rubikans.com/v1/product/              // NOT: https://api.rubikans.com/v1/product/create
