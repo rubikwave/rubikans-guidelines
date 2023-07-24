@@ -165,7 +165,7 @@ Packages can be decoupled by separating their responsibility, and they can be tu
         static final int HOUR = MINUTE * 60;
         static final int DAY = HOUR * 24;
 
-### 3. Code Comment
+## 3. Code Comment
 
 1. Comments do not make up for bad code.
 
@@ -239,7 +239,7 @@ Packages can be decoupled by separating their responsibility, and they can be tu
 
 Many programming languages do use same comment style, however for details you can refer to Java Code Conventions, for Python please refer to Python-PEP-257-Docstring Conventions.
 
-### 4. Testing
+## 4. Testing
 
 1. Test code must follow the same code conventions and programming styles.
 
@@ -253,7 +253,7 @@ Many programming languages do use same comment style, however for details you ca
 
 6. The person who broke the test sis responsible to fix the test without deleting the test.
 
-### 5. API Principles
+## 5. API Principles
 
 ### API Design
 
@@ -272,7 +272,6 @@ Many programming languages do use same comment style, however for details you ca
      - Add new properties/endpoints rather than changing existing ones.
      - Thoughtfully sunset obsolete properties/endpoints.
 
-
         {
             "data": {
             "id": 1,
@@ -280,17 +279,16 @@ Many programming languages do use same comment style, however for details you ca
             "firstName": "Carlos",           // new property in v2
             "lastName": "Norris",            // new property in v2
             "alias": "Chuck",                // obsolete property in v1
-            "aliases": ["Chuck", "Walker"]   // new property in v3
+            "aliases": ["Chuck", "Walker"]   // new property in v3 
         }
 
 3. API endpoints should be nested relatively.
-
 
         https://api.rubikans.com/v1/product/stats             // NOT: https://api.rubikans.com/v1/product_stats
 
 4. Use scoped API endpoints. An API endpoint should only affect a single resource.
 
-For example, when a user logs in, the API should not respond with a compound entities.
+    For example, when a user logs in, the API should not respond with a compound entities.
 
         { 
             name: "Shady"
@@ -299,7 +297,7 @@ For example, when a user logs in, the API should not respond with a compound ent
             permissions: [...permissions]
         }
 
-Entities should be seperated into its own endpoints.
+    Entities should be seperated into its own endpoints.
 
         {
             name: "Shady"
@@ -320,14 +318,13 @@ Entities should be seperated into its own endpoints.
         GET::https://api.rubikans.com/v1/product/22             // NOT: https://api.rubikans.com/v1/product/22/get
         POST::https://api.rubikans.com/v1/product/              // NOT: https://api.rubikans.com/v1/product/create
 
-
-| Method | Description                                      |
-|--------|--------------------------------------------------|
-| GET    | Used to retrieve a representation of a resources |
-| POST   | Used to create new resources and sub-resource    | 
-| PUT    | Used to update existing resource                 | 
-| PATCH  | Used to update parts of an existing resource     |
-| DELETE | Used to delete existing resource                 |
+    | Method | Description                                      |
+    |--------|--------------------------------------------------|
+    | GET    | Used to retrieve a representation of a resources |
+    | POST   | Used to create new resources and sub-resource    | 
+    | PUT    | Used to update existing resource                 | 
+    | PATCH  | Used to update parts of an existing resource     |
+    | DELETE | Used to delete existing resource                 |
 
 7. An API should be generic, abstract and uniform. An API should not differentiate between clients but may expose endpoints that are specific to a certain client. An API should also use uniform entity models in both request and response. 
 
