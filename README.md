@@ -161,7 +161,7 @@ Packages can be decoupled by separating their responsibility, and they can be tu
 
 1. Numerical constants (literals) should not be coded directly, except for -1, 0, and 1, which can appear in a for loop as counter values.
 
-        1000 * 60 * 60 * 24; 	//WRONG 
+        1000 * 60 * 60 * 24; 	// AVOID 
         // should be
         static final int MILLISECOND = 1;
         static final int SECOND = MILLISECOND * 1000;
