@@ -99,7 +99,7 @@ Packages can be decoupled by separating their responsibility, and they can be tu
 
 11. The name of the object is implicit, and should be avoided in a method name.
 
-        employee.getName();   // NOT: line.getEmployeeName();
+        employee.getName();   // NOT: employee.getEmployeeName();
 
 
 12. The terms *get/set* must be used where an attribute is accessed directly.
@@ -114,7 +114,11 @@ Packages can be decoupled by separating their responsibility, and they can be tu
 
         isSet, isVisible, isFinished, isFound, isOpen
 
-14. Plural form should be used on names representing a collection of objects.
+14. *can* & *has* prefix should be used for boolean probabilities.
+
+        canExpandBar, canViewDetails, hasContextMenu, hasModal
+
+15. Plural form should be used on names representing a collection of objects.
 
         Collection<Point>  points;
         int[]              values;
