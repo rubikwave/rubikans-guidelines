@@ -256,3 +256,7 @@ Many programming languages do use same comment style, however for details you ca
 5. Fix failing tests immediately and do not commit/push your code to the repository if your test is failing
 
 6. The person who broke the test sis responsible to fix the test without deleting the test
+
+[ref-1]:http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
+
+[ref-2]:https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html
