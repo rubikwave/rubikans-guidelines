@@ -1,4 +1,4 @@
-# Programming Guidelines
+# Programming Guidelines <sub style="font-size: .5em">v1.0</sub>
 
 This programming guideline contains standard conventions that are/will be used during the lifespan of this project. The goal is to produce high quality applications which has a same coding conventions and coding style. Examples that are placed in this language is in Typescript language, however most of the rules can be used in any language and some of the rules are only for object-oriented programming languages. Therefore please use this guideline as part of your development process.
 
